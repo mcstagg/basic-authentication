@@ -15,6 +15,7 @@ import Nav from './Nav';
 import Public from './Public';
 import Profile from './Profile';
 import Protected from './Protected';
+import MorePublic from './MorePublic';
 
 const Router = () => {
     
@@ -57,7 +58,8 @@ const Router = () => {
                     component={Profile}
                 />
                 <Route 
-                    component={Public}
+                    exact path="/morePublic"
+                    component={MorePublic}
                 />
             </Switch>
         </HashRouter>
